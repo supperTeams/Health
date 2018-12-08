@@ -1,0 +1,161 @@
+@import "plus.less";
+@media screen and (min-width: 800px) and (max-width: 1920px) {
+    #indexbanner{
+    height: calc(~"100vh - 234px");
+    .swiper-wrapper{height: calc(~"100% - 5vh");}
+    &:hover{.swiper-button-next, .swiper-button-prev{display: block;}}
+    .swiper-button-next, .swiper-button-prev{top: 45%; display: none;}
+    &>.swiper-pagination-bullets{bottom: 10px;
+    .swiper-pagination-bullet{width:5px; height: 5px; border:1px solid black; opacity: 1; background-color: white; }
+    .swiper-pagination-bullet-active{background-color: black;}}
+    .swiper-slide a{display: block; height: calc(~"100% - 5vh"); overflow: hidden; }
+    .btnBottom{position: absolute; left: 50%;z-index: 999; transform: translateX(-50%); bottom: 18px; width: 35px; text-align: center; cursor: pointer;
+    i{font-size: 35px;  color: black;}}}
+    
+    .indexlist{.widths; padding: 100px 0; overflow: hidden;
+    .productlist{position: relative; margin-top: 100px;
+    &:first-child{margin-top:0px;}
+    &.right{.left{left: auto; right: 0;} .right{margin-left: 0; margin-right: 785px;
+    .logo{ p{float: left; margin-right: 0; margin-left: 25px; span{float: right;}} h2{float: left;}}}}
+    .left{width: 695px; height: 440px; position: absolute; left: 0; top: 0; overflow: hidden;
+    &:hover{img{transform: scale(1.1);}}
+    img{transform: scale(1); transition: 0.5s transform; }}
+    .right{margin-left:785px;
+    .logo{overflow: hidden;
+    p{float: right; border-bottom: 2px solid @colors; height: 152px; padding-top:8px; margin-right: 25px; width: 120px;
+    span{display: block; width: 70px; height: 70px; float: left; margin: 0 10px;}}
+    h2{float: right; width: 40px; font-weight: 600; color: @colors; font-size: 40px; line-height: 45px;}}
+    .title{font-size: 30px; margin-top: 20px; color: black;}
+    .centent{font-size: 20px; margin-top: 20px; .lines; -webkit-line-clamp: 3; line-height: 25px; height: 75px;}
+    .btn{background-color: @colors; width: 200px; height: 70px; letter-spacing: 8px; transition: 0.5s letter-spacing; color: white; font-size: 20px; line-height: 70px; display: block; text-align: center; margin-top: 35px; position: relative; box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    &:before{position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border:1px solid white; display: block; content: ''; opacity: 0; transition: 0.5s opacity; }
+    &:hover{letter-spacing: 5px; text-decoration: none; 
+    &:before{opacity: 1;}}}}}}
+    
+    .indexhonor{.widths;
+    &>h2{font-size: 30px; color: @colors; padding-bottom: 50px; }
+    #honorbanner{
+        &:hover{.swiper-button-next, .swiper-button-prev{display: block;}}
+        .swiper-button-next, .swiper-button-prev{top: 40%; display: none;}
+        .swiper-slide{ a:hover{text-decoration:none; color: @colors;  } p:hover{ box-shadow: 0 0 20px rgba(0,0,0,0.2);}
+            p{width: 300px; height: 400px; overflow: hidden; margin: 0 auto; transition: 0.5s box-shadow;  box-shadow: 0 0 0 rgba(0,0,0,0.2);  }
+            h2{font-size: 20px; .line; text-align: center; margin-top: 25px; font-weight: 500;}
+            div{font-size: 20px; .lines; text-align: center; margin-top: 5px; line-height: 25px; height: 50px;}
+        }
+    }}
+    .indexcase{.widths; padding:0 100px; position: relative;
+    .swiper-button-next, .swiper-button-prev{outline:none;}
+    #casebanner{margin-top: 100px;
+    .swiper-slide{position: relative;
+    &:hover{p img{transform: scale(1.2);} div{opacity: 1;}}
+    p{width: 280px; height: 387px; overflow: hidden; margin: 0 auto; img{transition: 0.5s transform; transform: scale(1);}}
+    div{position: absolute; top: 0; background-color: rgba(0,0,0,0.4); left: 50%; transform: translateX(-50%);  width:280px; height: 100%; z-index: 9; opacity: 0; transition: 0.5s opacity; 
+    &:before{position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border:2px solid white; display: block; content: ''; }
+    h2{width: 30px; font-size: 30px; .lines; .conter; font-weight: 500; z-index: 99; color: white; -webkit-line-clamp: 10; line-height: 35px; height: auto; }}}}}
+    
+    .indexnews{.widths; margin-top: 100px;
+    &>h2{font-size: 30px; color: @colors; padding-bottom: 50px; }
+    ul{
+        li{padding-bottom: 30px; overflow: hidden;
+        .left{float: left; width: 90px; height: 70px; padding: 5px 15px; border:2px solid @colors; border-radius: 5px; position: relative;
+        h2{text-align: center; font-size: 36px; line-height: 36px;} 
+        p{font-size: 20px; text-align: center; margin-top: 10px; line-height: 20px;}
+        &:before{position: absolute; right: -13.5px; top: 50%; transform: translateY(-50%); content: ''; display: block; transform: translateY(-50%) rotate(45deg); border-top:2px solid @colors; border-right:2px solid @colors; width:25px; background-color: white; z-index: 9; width: 20px; height: 20px; }}
+        .right{margin-left: 200px; height: 70px; margin-top: 5px; border: 2px solid @colors;
+        p{.line; line-height: 70px; text-indent: 20px; font-size: 20px;}}}
+    }
+    .btn{.btn; margin:0 auto; margin-top:50px;}}
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .indexlist{width: 90%;
+     .productlist{
+         &.right{.right{margin-right: 555px;}}
+         .left{width: 495px; height: 315px;}
+         .right{margin-left: 555px;
+         .title{font-size: 20px; margin-top: 10px;}
+         .centent{line-height: 20px; height: 60px; font-size: 18px; margin-top: 10px; }
+         .logo{
+             p{height: 100px;}
+             h2{font-size: 25px; line-height: 30px;}
+         }
+         .btn{width: 150px; height: 50px; font-size: 15px; line-height: 50px;}}
+     }}
+     .indexhonor{width: 90%;}
+     .indexcase{width: 90%; padding: 0 5%; 
+      #casebanner{
+          .swiper-slide{
+              p{width: 180px; height: 250px; }
+              div{width: 180px;
+              h2{font-size: 18px; line-height: 25px;}}
+          }
+      }}
+      .indexnews{width: 90%;
+      .btn{width: 150px; height: 50px; font-size: 15px; line-height: 50px;}}
+}
+@media (min-width: 320px) {
+    #indexbanner{
+    height: calc(~"100vh - 234px");
+    .swiper-wrapper{height: calc(~"100% - 5vh");}
+    &:hover{.swiper-button-next, .swiper-button-prev{display: block;}}
+    .swiper-button-next, .swiper-button-prev{top: 45%; display: none;}
+    &>.swiper-pagination-bullets{bottom: 10px;
+    .swiper-pagination-bullet{width:5px; height: 5px; border:1px solid black; opacity: 1; background-color: white; }
+    .swiper-pagination-bullet-active{background-color: black;}}
+    .swiper-slide a{display: block; height: calc(~"100% - 5vh"); overflow: hidden; }
+    .btnBottom{position: absolute; left: 50%;z-index: 999; transform: translateX(-50%); bottom: 18px; width: 35px; text-align: center; cursor: pointer;
+    i{font-size: 35px;  color: black;}}}
+    
+    .indexlist{.widths; padding: 100px 0; overflow: hidden;
+    .productlist{position: relative; margin-top: 100px;
+    &:first-child{margin-top:0px;}
+    &.right{.left{left: auto; right: 0;} .right{margin-left: 0; margin-right: 785px;
+    .logo{ p{float: left; margin-right: 0; margin-left: 25px; span{float: right;}} h2{float: left;}}}}
+    .left{width: 695px; height: 440px; position: absolute; left: 0; top: 0; overflow: hidden;
+    &:hover{img{transform: scale(1.1);}}
+    img{transform: scale(1); transition: 0.5s transform; }}
+    .right{margin-left:785px;
+    .logo{overflow: hidden;
+    p{float: right; border-bottom: 2px solid @colors; height: 152px; padding-top:8px; margin-right: 25px; width: 120px;
+    span{display: block; width: 70px; height: 70px; float: left; margin: 0 10px;}}
+    h2{float: right; width: 40px; font-weight: 600; color: @colors; font-size: 40px; line-height: 45px;}}
+    .title{font-size: 30px; margin-top: 20px; color: black;}
+    .centent{font-size: 20px; margin-top: 20px; .lines; -webkit-line-clamp: 3; line-height: 25px; height: 75px;}
+    .btn{background-color: @colors; width: 200px; height: 70px; letter-spacing: 8px; transition: 0.5s letter-spacing; color: white; font-size: 20px; line-height: 70px; display: block; text-align: center; margin-top: 35px; position: relative; box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    &:before{position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border:1px solid white; display: block; content: ''; opacity: 0; transition: 0.5s opacity; }
+    &:hover{letter-spacing: 5px; text-decoration: none; 
+    &:before{opacity: 1;}}}}}}
+    
+    .indexhonor{.widths;
+    &>h2{font-size: 30px; color: @colors; padding-bottom: 50px; }
+    #honorbanner{
+        &:hover{.swiper-button-next, .swiper-button-prev{display: block;}}
+        .swiper-button-next, .swiper-button-prev{top: 40%; display: none;}
+        .swiper-slide{ a:hover{text-decoration:none; color: @colors;  } p:hover{ box-shadow: 0 0 20px rgba(0,0,0,0.2);}
+            p{width: 300px; height: 400px; overflow: hidden; margin: 0 auto; transition: 0.5s box-shadow;  box-shadow: 0 0 0 rgba(0,0,0,0.2);  }
+            h2{font-size: 20px; .line; text-align: center; margin-top: 25px; font-weight: 500;}
+            div{font-size: 20px; .lines; text-align: center; margin-top: 5px; line-height: 25px; height: 50px;}
+        }
+    }}
+    .indexcase{.widths; padding:0 100px; position: relative;
+    .swiper-button-next, .swiper-button-prev{outline:none;}
+    #casebanner{margin-top: 100px;
+    .swiper-slide{position: relative;
+    &:hover{p img{transform: scale(1.2);} div{opacity: 1;}}
+    p{width: 280px; height: 387px; overflow: hidden; margin: 0 auto; img{transition: 0.5s transform; transform: scale(1);}}
+    div{position: absolute; top: 0; background-color: rgba(0,0,0,0.4); left: 50%; transform: translateX(-50%);  width:280px; height: 100%; z-index: 9; opacity: 0; transition: 0.5s opacity; 
+    &:before{position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border:2px solid white; display: block; content: ''; }
+    h2{width: 30px; font-size: 30px; .lines; .conter; font-weight: 500; z-index: 99; color: white; -webkit-line-clamp: 10; line-height: 35px; height: auto; }}}}}
+    
+    .indexnews{.widths; margin-top: 100px;
+    &>h2{font-size: 30px; color: @colors; padding-bottom: 50px; }
+    ul{
+        li{padding-bottom: 30px; overflow: hidden;
+        .left{float: left; width: 90px; height: 70px; padding: 5px 15px; border:2px solid @colors; border-radius: 5px; position: relative;
+        h2{text-align: center; font-size: 36px; line-height: 36px;} 
+        p{font-size: 20px; text-align: center; margin-top: 10px; line-height: 20px;}
+        &:before{position: absolute; right: -13.5px; top: 50%; transform: translateY(-50%); content: ''; display: block; transform: translateY(-50%) rotate(45deg); border-top:2px solid @colors; border-right:2px solid @colors; width:25px; background-color: white; z-index: 9; width: 20px; height: 20px; }}
+        .right{margin-left: 200px; height: 70px; margin-top: 5px; border: 2px solid @colors;
+        p{.line; line-height: 70px; text-indent: 20px; font-size: 20px;}}}
+    }
+    .btn{.btn; margin:0 auto; margin-top:50px;}}
+}
